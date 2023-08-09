@@ -1,0 +1,10 @@
+/*desktop screen*/
+@media (min-width: 640px) {
+   .recipes {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 2em;
+    margin-right: 2em;
+   }
+}

@@ -1,0 +1,26 @@
+:root {
+    --color-black: #2C2526;
+    --color-white: #EFE6E3;
+
+    --color-purple: #7D6586;
+    --color-green: #73834f;
+    --color-blue: #577E81;
+    --color-yellow: #BC7947;
+    --color-pink: #CA7C7A;
+}
+
+.yellow {
+    color: var(--color-yellow);
+}
+
+.pink {
+    color: var(--color-pink);
+}
+
+.blue {
+    color: var(--color-blue);
+}
+
+.green {
+    color: var(--color-green);
+}

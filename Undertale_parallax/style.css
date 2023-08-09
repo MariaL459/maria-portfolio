@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: determination;
+    line-height: 1.3rem;
+}
+
+@font-face {
+    src: url(Font/determinationmonoweb-webfont.ttf);
+    font-family: determination;
+}
+
+.logo {
+    width: 25rem;
+    display: block;
+    margin: 2em auto ;
+}
+
+section {
+    padding: 2rem 4rem;
+    background-color: black;
+    color: aliceblue;
+    position: relative;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 4em;
+    padding-bottom: 1em;
+}
+
+/*Parallax effect*/
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.bottom {
+    transform: translateZ(-10px) scale(2);
+}
+
+.middle {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.top {
+    transform: translateZ(-1px) scale(1.1);
+}
+
+.bottom,
+.middle,
+.top {
+    width: 100vw;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    min-height: 100vh;
+}
+
